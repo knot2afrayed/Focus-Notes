@@ -13,6 +13,10 @@ class ViewController: UIViewController {
     @IBOutlet var numberA: UITextField!
     @IBOutlet var numberB: UITextField!
     
+    @IBOutlet var writeSomething: UITextField!
+    
+    @IBOutlet var writeBtn: UIButton!
+    @IBOutlet var writeSomethingLabel: UILabel!
     @IBOutlet var AnswerText: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,5 +44,11 @@ class ViewController: UIViewController {
         }
     }
     
+   
+    
+    
+    @IBAction func writeButton(_ sender: Any) {
+        writeSomethingLabel.text = writeSomething.text
+    }
 }
 
